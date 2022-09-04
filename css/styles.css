@@ -1,0 +1,22 @@
+:root{
+    --title-black-color: #212121;
+    --secondery-black-color: #757575;
+    --blue-color: #2196F3;
+    --white-color:#FFFFFF;
+    
+}
+
+body{
+    color: var(--secondery-black-color);
+    font-family: ;
+}
+
+a{
+    text-decoration: none;
+}
+  /*Оформлення навігації  */
+.logo {
+    font-size: 26px ;
+    font-family: ;
+
+}
