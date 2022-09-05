@@ -1,22 +1,62 @@
 :root{
     --title-black-color: #212121;
-    --secondery-black-color: #757575;
+    --text-color: #757575;
     --blue-color: #2196F3;
     --white-color:#FFFFFF;
     
 }
-
+/* ЗАГАЛЬНІ ПРАВИЛА */
 body{
-    color: var(--secondery-black-color);
-    font-family: ;
+    color: var(--text-color);
+    font-family: roboto, sans-serif;  
 }
 
 a{
     text-decoration: none;
 }
+
+ul{
+    list-style-type: none;
+}
+
   /*Оформлення навігації  */
 .logo {
     font-size: 26px ;
-    font-family: ;
+    color:var(--title-black-color);
+    font-family: Raleway;
 
+}
+
+.site-nav .list{
+    color:var(--title-black-color);
+}
+.contact-nav .list{
+    color: var(--text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.contact-nav a:hover,
+.contact-nav a:focus{
+    color:var(--blue-color);
+}
+/* ОФОРМЛЕННЯ ГЕРОЯ */
+h1,h2,h3,h4,h5,h6{
+    color:var(--title-black-color);
+}
+.hero-title{
+    color: var(--white-color);
+    background-color: var(--text-color);
+}
+
+/* ФУТЕР */
+
+footer{
+    background-color: var(--text-color);
+}
+footer .logo{
+    color:var(--white-color);
+}
+footer a{
+    color:#FFFFFF60;
 }
