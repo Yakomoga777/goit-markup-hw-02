@@ -9,29 +9,28 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+<!--ПАНЕЛЬ НАВІГАЦІЇ -->
     <header>
-     <a href="/" class="logo"> <span style="color: #2196f3">Web</span>Studio</a>
-      <nav>
+      <a href="/" class="logo"> <span style="color: #2196f3">Web</span>Studio</a>
+      <nav class="site-nav">
         <ul>
-          <li>
-            <a href="./index.html">Студія</a>
-          </li>
-          <li>
-            <a href="#">Портфоліо</a>
-          </li>
-          <li>
-            <a href="#">Контакти</a>
-          </li>
+          <li><a href="./index.html" class="list">Студія</a></li>
+          <li><a href="./portfolio.html" class="list">Портфоліо</a></li>
+          <li><a href="#" class="list">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+
+      <ul class="contact-nav">
+        <li><a href="tel:+380961111111" class="list">+38 096 111 11 11</a></li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="list">info@devstudio.com</a>
+        </li>
       </ul>
     </header>
-
-    <main>
+<!-- ФІЛЬТР ПОРТФОЛІО -->
+     <main>
       <h1>Портфоліо</h1>
+      <!-- ПАРАМЕТРИ ФІЛЬТРА -->
       <ul class="filter">
         <li>
           <button type="button">Усі</button>
@@ -49,21 +48,83 @@
           <button type="button">Маркетинг</button>
         </li>
       </ul>
-      <ul>
+      <!-- ПРКЛАДИ РОБІТ -->
+      <ul class="works"
         <li>
           <a href="#">
             <img src="./images/portfolio/img1.jpg" alt="Веб-сайт на ноутбуці" width="370" />
             <h2>Технокряк</h2>
             <p>Веб-сайт</p>
           </a>
-          
         </li>
+        <li>
+          <a href="#">
+            <img
+              src="./images/portfolio/img2.jpg"
+              alt="Графічне зображення баскетболістів"
+              width="370"
+            />
+            <h3>Постер New Orlean vs Golden Star</h3>
+            <p>Дизайн</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/portfolio/img3.jpg" alt="Логотип ресторану" width="370" />
+            <h3>Ресторан Seafood</h3>
+            <p>Додаток</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/portfolio/img4.jpg" alt="Навушники" width="370" />
+            <h3>Проєкт Prime</h3>
+            <p>Маркетинг</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/portfolio/img5.jpg" alt="Дизайни коробок" width="370" />
+            <h3>Проєкт Boxes</h3>
+            <p>Додаток</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/portfolio/img6.jpg" alt="Вебсайт на моніторі" width="370" />
+            <h3>Inspiration has no Borders</h3>
+            <p>Веб-сайт</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/portfolio/img7.jpg" alt="Книжка" width="370" />
+            <h3>Видання Limited Edition</h3>
+            <p>Дизайн</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/portfolio/img8.jpg" alt="Логотип компанії" width="370" />
+            <h3>Проєкт LAB</h3>
+            <p>Маркетинг</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/portfolio/img9.jpg" alt="Зображення сайту" width="370" />
+            <h3>Growing Business</h3>
+            <p>Додаток</p>
+          </a>
+        </li>
+      </ul>
+
     </main>
 
     <footer>
      <a href="/" class="logo"> <span style="color: #2196f3">Web</span>Studio</a>
       <address>
-        <p>м. Київ, пр-т Лесі Українки, 26</p>
+        <p style="color: #ffffff">м. Київ, пр-т Лесі Українки, 26</p>
         <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         <a href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
@@ -77,67 +138,14 @@
     </section>
 
     <section class="projects">
-      <h2>Результати фільтра</h2>
       
-        <li>
-          <a href="#">
-            <img
-              src="./images/portfolio/img2.jpg"
-              alt="Графічне зображення баскетболістів"
-              width="370"
-            />
-          </a>
-          <h3>Постер New Orlean vs Golden Star</h3>
-          <p>Дизайн</p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/portfolio/img3.jpg" alt="Логотип ресторану" width="370" />
-          </a>
-          <h3>Ресторан Seafood</h3>
-          <p>Додаток</p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/portfolio/img4.jpg" alt="Навушники" width="370" />
-          </a>
-          <h3>Проєкт Prime</h3>
-          <p>Маркетинг</p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/portfolio/img5.jpg" alt="Дизайни коробок" width="370" />
-          </a>
-          <h3>Проєкт Boxes</h3>
-          <p>Додаток</p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/portfolio/img6.jpg" alt="Вебсайт на моніторі" width="370" />
-          </a>
-          <h3>Inspiration has no Borders</h3>
-          <p>Веб-сайт</p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/portfolio/img7.jpg" alt="Книжка" width="370" />
-          </a>
-          <h3>Видання Limited Edition</h3>
-          <p>Дизайн</p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/portfolio/img8.jpg" alt="Логотип компанії" width="370" />
-          </a>
-          <h3>Проєкт LAB</h3>
-          <p>Маркетинг</p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/portfolio/img9.jpg" alt="Зображення сайту" width="370" />
-          </a>
-          <h3>Growing Business</h3>
-          <p>Додаток</p>
-        </li>
-      </ul>
+      
+        
+        
+       
+       
+        
+        
+       
+        
     </section>-->
