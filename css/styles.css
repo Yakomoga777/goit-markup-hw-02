@@ -3,13 +3,9 @@
   --text-color: #757575;
   --blue-color: #2196f3;
   --white-color: #ffffff;
+  --background-white: #f5f5f5;
 }
 /* ЗАГАЛЬНІ ПРАВИЛА */
-body {
-  color: var(--text-color);
-  font-family: roboto, sans-serif;
-}
-
 a {
   text-decoration: none;
 }
@@ -18,15 +14,35 @@ ul {
   list-style-type: none;
 }
 
+body {
+  background-color: var(--background-white);
+  color: var(--text-color);
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+button {
+  font-family: roboto, sans-serif;
+}
 /*Оформлення навігації  */
 .logo {
   font-size: 26px;
   color: var(--title-black-color);
   font-family: Raleway;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19x;
+  /* identical to box height */
 }
 
-.site-nav .list {
+.site-nav .list,
+.contact-nav .list {
   color: var(--title-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .contact-nav .list {
   color: var(--text-color);
@@ -50,12 +66,55 @@ h6 {
 .hero-title {
   color: var(--white-color);
   background-color: var(--text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.66;
+}
+/* ОСОБЛИВОСТІ */
+.features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+}
+/* НАША КОМАНДА */
+.team-list {
+  background-color: #f5f4fa;
+}
+.team-list h2,
+.our-works h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.team-list p,
+.team-list h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
 }
 
 /* ФУТЕР */
 
 footer {
-  background-color: var(--text-color);
+  background-color: #2f303a;
 }
 footer .logo {
   color: var(--white-color);
@@ -63,8 +122,27 @@ footer .logo {
 footer a {
   color: #ffffff60;
 }
-/* ПОРТФОЛІО */
+address {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+}
+/* ------ПОРТФОЛІО------- */
 
 .works p {
   color: var(--text-color);
+}
+.works h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
 }
