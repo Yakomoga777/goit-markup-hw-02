@@ -26,36 +26,36 @@ body {
   background-color: var(--background-white);
   color: var(--text-color);
   font-family: roboto, sans-serif;
-  font-weight: 400;
   letter-spacing: 0.03em;
 }
 button {
   font-family: roboto, sans-serif;
-  
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-weight: 700;
   color: var(--title-black-color);
   margin: 0;
+  line-height: 1.17;
 }
 h1 {
+  color: var(--title-black-color);
   margin: 0 auto;
+  font-weight: 900;
+  line-height: 1.36;
 }
 h2 {
   margin-bottom: 50px;
 }
-.container{
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  
 
   outline: 1px solid tomato;
 }
@@ -106,7 +106,9 @@ section {
 .site-nav a:hover,
 .site-nav a:focus,
 .contact-nav a:hover,
-.contact-nav a:focus {
+.contact-nav a:focus,
+address a:hover,
+address a:focus {
   color: var(--blue-color);
 }
 /* ОФОРМЛЕННЯ ГЕРОЯ */
@@ -152,6 +154,8 @@ button.hero-btn {
   opacity: 0;
   height: 0;
   margin: 0;
+  line-height: 0;
+  font-size: 0px;
 }
 .features h3 {
   font-weight: 700;
@@ -163,7 +167,6 @@ button.hero-btn {
   text-transform: uppercase;
 }
 
-}
 .features p {
   font-size: 14px;
   line-height: 1.71;
@@ -174,8 +177,6 @@ button.hero-btn {
 .features-list li {
   width: 270px;
   height: 98px;
-
-  
 }
 
 /* ЧИМ МИ ЗАЙМАЄМОСЯ */
@@ -198,22 +199,22 @@ button.hero-btn {
   line-height: 1.19;
   /* identical to box height */
 }
-.card img{
-  margin-bottom: 30px;;
+.card img {
+  margin-bottom: 30px;
 }
-.card p{
+.card p {
   margin: 10px 0 0 0;
 }
-.card{
+.card {
   width: 270px;
   height: 368px;
   padding-bottom: 30px;
 
   outline: 1px solid gray;
 }
-.card h3, 
-.card p{
-text-align: center;
+.card h3,
+.card p {
+  text-align: center;
 }
 
 /* ФУТЕР */
@@ -239,15 +240,16 @@ address {
   height: 81px;
 }
 address a,
-address p{
+address p {
   padding-bottom: 9px;
   margin: 0;
 }
-/* ------ПОРТФОЛІО------- */
+/* ------PORTFOLIO------- */
 
 .works p {
   color: var(--text-color);
   margin: 0;
+  line-height: 1.875;
 }
 .works h2 {
   font-weight: 700;
@@ -263,12 +265,11 @@ address p{
   line-height: 1.62;
   /* identical to box height, or 162% */
   text-align: center;
+  cursor: pointer;
 }
-.filter-list{
-  display: ;
+.filter-list {
 }
 
-
-.title{
-  padding:20px 24px ;
+.title {
+  padding: 20px 24px;
 }
