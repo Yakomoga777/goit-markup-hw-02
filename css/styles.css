@@ -28,7 +28,6 @@ ul {
 body {
   width: 1600px;
   height: 600px;
-  background-color: var(--background-white);
   color: var(--text-color);
   font-family: roboto, sans-serif;
   font-weight: 400;
@@ -101,12 +100,17 @@ h1 {
   line-height: 1.875;
   letter-spacing: 0.06em;
 
-  width: 216px;
+  min-width: 216px;
   height: 50px;
 
   color: var(--white-color);
   background-color: var(--blue-color);
   margin-top: 30px;
+}
+.btn {
+  display: inline;
+  border-radius: 4px;
+  border: none;
 }
 
 /* FEATURES */
@@ -126,10 +130,6 @@ h1 {
 }
 section {
   padding: 94px 0;
-}
-section.features,
-section.our-works {
-  background-color: var(--background-white);
 }
 
 /* OUR-WORKS */
@@ -166,4 +166,39 @@ address a {
 footer .logo {
   display: inline-block;
   margin-bottom: 20px;
+}
+
+/* PORTFOLIO */
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  min-width: 73px;
+  height: 38px;
+
+  padding: 6px 22px;
+  margin-bottom: 50px;
+
+  background: var(--background-gray);
+}
+.filter .hidden {
+  color: var(--title-black-color);
+}
+.works h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px 0;
+
+  color: var(--title-black-color);
+}
+.works p {
+  font-size: 16px;
+  line-height: 1.88;
+  margin: 0;
+
+  color: var(--text-color);
 }
