@@ -78,7 +78,9 @@ header {
 .nav-menu a:hover,
 .nav-menu a:focus,
 .contact-menu a:hover,
-.contact-menu a:focus {
+.contact-menu a:focus,
+.address-list a:hover,
+.address-list a:focus {
   color: var(--blue-color);
 }
 h1 {
@@ -111,6 +113,7 @@ h1 {
   display: inline;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 /* FEATURES */
@@ -201,4 +204,9 @@ footer .logo {
   margin: 0;
 
   color: var(--text-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
