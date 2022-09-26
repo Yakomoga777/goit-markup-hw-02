@@ -8,6 +8,10 @@
   --footer-color: #2f303a;
   --address-color: rgba(255, 255, 255, 0.6);
   --outline: 2px solid tomato;
+  --logo-black-color: #000000;
+  --s: #eeeeee;
+
+  --ss: #ececec;
 }
 
 /* ЗАГАЛЬНІ ПРАВИЛА */
@@ -26,12 +30,11 @@ ul {
 }
 
 body {
-  width: 1600px;
-  height: 600px;
-  color: var(--text-color);
   font-family: roboto, sans-serif;
-  font-weight: 400;
+  font-size: 14px;
   letter-spacing: 0.03em;
+
+  color: var(--text-color);
 }
 button {
   font-family: roboto, sans-serif;
@@ -44,13 +47,27 @@ h5,
 h6 {
   color: var(--title-black-color);
   margin: 0;
-  line-height: 1.17;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 36px;
-  font-weight: 700;
+  line-height: 1.17;
   margin-bottom: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* HEADER */
@@ -61,17 +78,21 @@ h2 {
   line-height: 1.19;
   /* identical to box height */
   letter-spacing: 0.03em;
+  color: var(--blue-color);
 }
-header {
-  font-family: Roboto, sans-serif;
+.header-logo-studio {
+  color: var(--logo-black-color);
+}
+
+.nav-list-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.nav-menu a {
+
   color: var(--title-black-color);
 }
+
 .contact-menu a {
   color: var(--text-color);
 }
@@ -83,7 +104,11 @@ header {
 .address-list a:focus {
   color: var(--blue-color);
 }
-h1 {
+.current {
+  color: var(--blue-color);
+}
+
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -94,7 +119,7 @@ h1 {
   color: var(--white-color);
 }
 .hero {
-  background-color: var(--text-color);
+  background-color: var(--footer-color);
 }
 .hero-btn {
   font-weight: 700;
@@ -120,6 +145,9 @@ h1 {
 
 .features-list-item.title {
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.17;
+
   margin-bottom: 10px;
 }
 .features-list-item.text {
@@ -129,7 +157,7 @@ h1 {
   margin: 0;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--text-color);
 }
 section {
   padding: 94px 0;
@@ -142,9 +170,9 @@ section.team {
   background-color: var(--background-gray);
 }
 .card-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
   letter-spacing: 0.06em;
   margin-bottom: 10px;
 }
@@ -154,6 +182,7 @@ section.team {
   color: var(--text-color);
   margin: 0;
 }
+
 /* FOOTER */
 footer {
   background-color: var(--footer-color);
@@ -170,6 +199,9 @@ footer .logo {
   display: inline-block;
   margin-bottom: 20px;
 }
+.footer-logo-studio {
+  color: var(--white-color);
+}
 
 /* PORTFOLIO */
 .filter-btn {
@@ -177,6 +209,7 @@ footer .logo {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
 
   min-width: 73px;
   height: 38px;
@@ -184,6 +217,7 @@ footer .logo {
   padding: 6px 22px;
   margin-bottom: 50px;
 
+  color: var(--title-black-color);
   background: var(--background-gray);
 }
 .filter .hidden {
